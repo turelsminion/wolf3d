@@ -2,15 +2,12 @@
 
 int main()
 {
-    int     i;
-    int     j;
-    t_walls *walls;
     t_Wmlx  mlx;
+    t_room  room;
 
-    walls = memallocwalls(walls);
-    walls = read_file(walls);
     mlx.ptr = mlx_init();
     mlx.win = mlx_new_window(mlx.ptr, len, len, "WOLF3D");
+    room = memalloc_room(room);
     mlx_loop(mlx.ptr);
-    return(0);
+    return (0);
 }

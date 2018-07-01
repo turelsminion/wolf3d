@@ -9,7 +9,8 @@ HEAD = include/wolf3d.h
 
 SRC =	src/main.c \
 		src/read_file.c \
-		src/memalloc.c
+		src/memalloc.c \
+		src/create_texture.c
 
 OBJ = $(patsubst %.c,%.o,$(addprefix $(PATH_SRC), $(SRC)))
 
